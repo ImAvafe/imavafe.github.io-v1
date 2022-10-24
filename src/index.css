@@ -1,0 +1,106 @@
+:root {
+    --cyff-color: #d375ff;
+    --page-bg: #131313;
+}
+
+body {
+    background-color: var(--page-bg);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+.content {
+    max-width: 50rem;
+    margin: auto;
+    height: 100vh;
+    padding-top: 2%;
+    grid-column: auto;
+    align-content: center;
+}
+
+#banner {
+    width: 100%;
+    height: 10rem;
+    background: url(https://tr.rbxcdn.com/1d1dcc0a97b4262f10cd9c78b5f7bb83/352/352/Avatar/Png) no-repeat;
+    background-position-x: center;
+    background-position-y: 7%;
+    position: relative;
+}
+
+#banner-fade {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(0deg,rgba(19, 19, 19, 1) 0,rgba(19, 19, 19, 0.6) 70%,transparent);
+    position: absolute;
+    bottom: 0;
+}
+
+.intro {
+    text-align: center;
+    font-size: 1.08rem;
+    padding-bottom: 30px;
+    padding-top: 7px;
+}
+
+#title {
+    color: var(--cyff-color);
+    font-size: 2.45rem;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+}
+
+.socials {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 13px;
+}
+
+.socials a {
+    height: 50px;
+    width: 50px;
+    padding: 10%;
+}
+
+.socials svg {
+    height: 100%;
+    width: 100%;
+    fill: white;
+    transition: fill .3s ease
+}
+
+.socials svg:hover {
+    fill: var(--cyff-color);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.example {
+    height: 120px;
+    width: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.category a {
+    background-color: transparent;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 1.2rem;
+    text-decoration: none;
+}
