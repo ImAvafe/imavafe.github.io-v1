@@ -5,56 +5,78 @@
 
 body {
     position: relative;
+    margin: 0;
+
     background-color: var(--page-bg);
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    margin: 0;
 }
 
 body::before {
-    background: url(/Assets/tongue_face.svg) space 0 0;
-    background-size: 100px;
-    opacity: 0.0078;
-    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+
+    background: url(/Assets/tongue_face.svg) space 0 0;
+    background-size: 100px;
+    opacity: 0.0078;
+
+    content: '';
 }
 
-#content {
+/* Centered page content */
+
+#main-content {
     position: relative;
     max-width: 30rem;
     margin: auto;
-    height: 100vh;
-    padding-top: 70px;
+    margin-top: 70px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
 }
 
-#banner {
+/* Footer section */
+
+#footer {
+    height: 100px;
+    margin-top: 10%;
+
+    background-color: rgba(2, 2, 2, 0.3);
+    filter: blur(30px);
+}
+
+/* Personal avatar */
+
+#avatar {
+    position: relative;
     width: 100%;
     height: 10.5rem;
+
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 7%;
-    position: relative;
 }
 
-#banner-fade {
+#avatar-fade {
+    position: absolute;
     width: 100%;
     height: 45px;
-    background: linear-gradient(0deg,rgba(19, 19, 19, 1) 0,rgba(19, 19, 19, 0.6) 70%,transparent);
-    position: absolute;
     bottom: 0;
+
+    background: linear-gradient(0deg,rgba(19, 19, 19, 1) 0,rgba(19, 19, 19, 0.6) 70%,transparent);
 }
+
+/* Personal introduction */
 
 .intro {
     text-align: center;
     font-size: 1.08rem;
+
     padding-bottom: 30px;
     padding-top: 7px;
 }
@@ -63,6 +85,7 @@ body::before {
     color: var(--cyff-color);
     font-size: 2.45rem;
     font-family: 'Lexend', sans-serif;
+
     margin: 0;
 }
 
@@ -85,6 +108,7 @@ body::before {
     height: 100%;
     width: 100%;
     fill: white;
+    
     transition: fill .3s ease
 }
 
@@ -92,7 +116,11 @@ body::before {
     fill: var(--cyff-color);
 }
 
-.showcase {
+/* Project showcase */
+
+#showcase {
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -102,22 +130,74 @@ body::before {
     column-gap: 10px;
 }
 
-.example {
-    height: 120px;
-    width: 100%;
+.category {
+    width: 89%;
 }
 
-.background {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
+.category button {
+    display: block;
+    margin: auto;
 
-.category a {
-    background-color: transparent;
     color: white;
     font-family: 'Source Sans Pro';
     font-size: 1.2rem;
-    text-decoration: none;
+    text-align: center;
+
+    background-color: transparent;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+.category-content {
+    margin-top: 21px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Showcase category contents */
+
+.project-listing {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    background-size: 100%;
+    background-position: center;
+    border-color: #c9c9c9;
+
+    border-width: 1px;
+    border-style: solid;
+
+    transition: border-color .25s ease;
+    transition: background-size .5s ease;
+}
+
+.project-listing:hover {
+    background-size: 107%;
+    border-color: var(--cyff-color);
+    border-width: 2px;
+}
+
+.project-listing h3 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 9px;
+    padding-left: 16px;
+
+    color: white;
+    font-weight: 100;
+    font-size: 23px;
+    
+    background-color: rgba(255, 255, 255, 0.08);
 }
