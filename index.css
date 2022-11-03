@@ -21,7 +21,7 @@ body::before {
 
     background: url(/Assets/tongue_face.svg) space 0 0;
     background-size: 100px;
-    opacity: 0.009;
+    opacity: 0.015;
 
     content: '';
 }
@@ -44,7 +44,7 @@ body::before {
 
 /* Footer section */
 
-#footer {
+#footer:not(p) {
     height: 115px;
     margin-top: 8%;
 
@@ -62,7 +62,7 @@ body::before {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 7%;
-    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 75%, rgba(255,255,255,0.05) 93%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(255,255,255,0.05) 93%);
 }
 
 /* Personal introduction */
@@ -102,9 +102,10 @@ body::before {
 .socials svg {
     height: 100%;
     width: 100%;
+
     fill: white;
     
-    transition: fill .3s ease
+    transition: fill .25s ease
 }
 
 .socials svg:hover {
@@ -159,30 +160,44 @@ body::before {
 
 .project-listing {
     position: relative;
-    height: 230px;
+    height: 240px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 
-    background-size: 100%;
-    background-position: center;
-    background-color: #dbdbdb;
-    background-blend-mode: multiply;
-    border-color: #c9c9c9;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
 
+    overflow: hidden;
+
+    border-color: #c9c9c9;
     border-width: 1px;
     border-style: solid;
+    border-radius: 4px;
 
     transition: border-color .25s ease;
-    transition: background-size .5s ease;
     /* transition: background-color .25s ease; */
 }
 
 .project-listing:hover {
-    background-size: 107%;
     background-color: #e4e4e4;
     border-color: var(--cyff-color);
     border-width: 2px;
+}
+
+.project-listing .thumbnail {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-color: #dbdbdb;
+    background-blend-mode: multiply;
+
+    transition: all .51s ease;
+}
+
+.project-listing:hover .thumbnail {
+    transform: scale(1.07);
 }
 
 .project-listing h3 {
@@ -224,7 +239,7 @@ body::before {
     padding-right: 4px;
 
     fill: white;
-    opacity: 0.5;
+    opacity: 0.6;
 
     transition: all 0.25s ease;
 }
