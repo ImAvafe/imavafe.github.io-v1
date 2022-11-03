@@ -133,6 +133,7 @@ body::before {
 }
 
 .category button {
+    position: relative;
     display: block;
     margin: auto;
 
@@ -146,6 +147,18 @@ body::before {
 
     cursor: pointer;
 }
+
+/* .category button svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+
+    height: 100%;
+    width: 20px;
+
+    padding: 5px;
+} */
 
 .category-content {
     margin-top: 21px;
@@ -199,7 +212,7 @@ body::before {
 }
 
 .project-listing:hover .thumbnail {
-    transform: scale(1.07);
+    transform: scale(1.06);
     background-color: white;
 }
 
