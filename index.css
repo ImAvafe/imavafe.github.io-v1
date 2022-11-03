@@ -1,6 +1,6 @@
 :root {
     --cyff-color: #d375ff;
-    --page-bg: #131313;
+    --page-bg: #111111;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     margin: 0;
 
     background-color: var(--page-bg);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', 'Source Sans Pro', sans-serif;
     color: white;
 }
 
@@ -21,7 +21,7 @@ body::before {
 
     background: url(/Assets/tongue_face.svg) space 0 0;
     background-size: 100px;
-    opacity: 0.0078;
+    opacity: 0.009;
 
     content: '';
 }
@@ -31,8 +31,10 @@ body::before {
 #main-content {
     position: relative;
     max-width: 30rem;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 60px;
 
     display: flex;
     flex-direction: column;
@@ -43,8 +45,8 @@ body::before {
 /* Footer section */
 
 #footer {
-    height: 100px;
-    margin-top: 10%;
+    height: 115px;
+    margin-top: 8%;
 
     background-color: rgba(2, 2, 2, 0.3);
     filter: blur(30px);
@@ -60,25 +62,18 @@ body::before {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 7%;
-}
-
-#avatar-fade {
-    position: absolute;
-    width: 100%;
-    height: 45px;
-    bottom: 0;
-
-    background: linear-gradient(0deg,rgba(19, 19, 19, 1) 0,rgba(19, 19, 19, 0.6) 70%,transparent);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.95) 75%, rgba(255,255,255,0.05) 93%);
 }
 
 /* Personal introduction */
 
 .intro {
-    text-align: center;
-    font-size: 1.08rem;
-
+    width: 75%;
     padding-bottom: 30px;
     padding-top: 7px;
+
+    text-align: center;
+    font-size: 1.03rem;
 }
 
 #title {
@@ -131,7 +126,7 @@ body::before {
 }
 
 .category {
-    width: 89%;
+    width: 100%;
 }
 
 .category button {
@@ -139,8 +134,8 @@ body::before {
     margin: auto;
 
     color: white;
-    font-family: 'Source Sans Pro';
-    font-size: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
     text-align: center;
 
     background-color: transparent;
@@ -164,13 +159,15 @@ body::before {
 
 .project-listing {
     position: relative;
-    height: 220px;
+    height: 230px;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 
     background-size: 100%;
     background-position: center;
+    background-color: #dbdbdb;
+    background-blend-mode: multiply;
     border-color: #c9c9c9;
 
     border-width: 1px;
@@ -178,10 +175,12 @@ body::before {
 
     transition: border-color .25s ease;
     transition: background-size .5s ease;
+    /* transition: background-color .25s ease; */
 }
 
 .project-listing:hover {
     background-size: 107%;
+    background-color: #e4e4e4;
     border-color: var(--cyff-color);
     border-width: 2px;
 }
@@ -189,15 +188,48 @@ body::before {
 .project-listing h3 {
     position: absolute;
     box-sizing: border-box;
-    width: 100%;
     bottom: 0;
     margin: 0;
+
+    width: 100%;
+    height: 47;
     padding: 9px;
     padding-left: 16px;
 
     color: white;
+    font-family: 'Poppins', 'Source Sans Pro', sans-serif;
     font-weight: 100;
-    font-size: 23px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #0f0f0f;
     
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.11);
+
+    transition: all 0.25s ease;
+}
+
+.project-listing:hover h3 {
+    color: var(--cyff-color);
+    background-color: rgba(255, 255, 255, 0.115);
+}
+
+.project-listing h3 svg {
+    position :absolute;
+    margin: 0;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+
+    height: 64%;
+    width: 40px;
+    padding-right: 4px;
+
+    fill: white;
+    opacity: 0.5;
+
+    transition: all 0.25s ease;
+}
+
+.project-listing:hover h3 svg {
+    fill: var(--cyff-color);
+    opacity: 1;
 }
