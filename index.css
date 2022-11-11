@@ -34,7 +34,7 @@ body::before {
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 
     display: flex;
     flex-direction: column;
@@ -262,4 +262,43 @@ body::before {
 .project-listing:hover h3 svg {
     fill: var(--cyff-color);
     opacity: 1;
+}
+
+/* ❄ Christmas themed stuff */
+
+#christmas-lights {
+    position: relative;
+    transform: translate(-50%, -5px);
+    left: 50%;
+
+    overflow: hidden;
+
+    width: 570px;
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+
+    background-image: url(/Assets/ChristmasLights.png);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 560px;
+}
+
+#snow {
+    position: absolute;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.snowflake {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
 }
