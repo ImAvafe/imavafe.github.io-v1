@@ -1,3 +1,5 @@
+// I took and customized this snow implementation from a random website https://www.cssscript.com/animated-snowfall-effect/
+
 function getWidth() {
     return Math.max(
       document.body.scrollWidth,
@@ -8,7 +10,7 @@ function getWidth() {
     );
   }
 
-let snowflakes_count = 160 / 1920 * getWidth();
+let snowflakes_count = 170 / 1920 * getWidth();
 console.log(snowflakes_count)
 
 // let base_css = ``; // Put your custom base css here
@@ -96,7 +98,7 @@ function spawnSnowCSS(snow_density = 200){
             }
 
             to {
-                transform: translate(${random_x_end_yoyo}vw, 100vh) scale(${random_scale});
+                transform: translate(${random_x_end_yoyo}vw, 140vh) scale(${random_scale});
             }
             
         }
