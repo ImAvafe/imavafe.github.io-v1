@@ -296,8 +296,8 @@ body::before {
 
 .snowflake {
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background: linear-gradient(white, white);
     border-radius: 50%;
     filter: drop-shadow(0 0 10px white);

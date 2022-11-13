@@ -2,15 +2,15 @@
 
 function getWidth() {
     return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
     );
-  }
+}
 
-let snowflakes_count = 170 / 1920 * getWidth();
+let snowflakes_count = 180 / 1920 * getWidth();
 console.log(snowflakes_count)
 
 // let base_css = ``; // Put your custom base css here
@@ -113,5 +113,3 @@ window.onload = function() {
     spawnSnowCSS(snowflakes_count);
     spawn_snow(snowflakes_count);
 };
-
-// TODO add progress bar for slower clients
