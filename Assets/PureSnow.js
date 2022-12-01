@@ -11,7 +11,7 @@ function getWidth() {
 }
 
 let snowflakes_count = 180 / 1920 * getWidth();
-console.log(snowflakes_count)
+console.log("Snow count: " + snowflakes_count)
 
 // let base_css = ``; // Put your custom base css here
 
