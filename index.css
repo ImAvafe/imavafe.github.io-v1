@@ -1,5 +1,5 @@
 :root {
-    --cyff-color: #d375ff;
+    --my-color: #d375ff;
     --page-bg: #0e0e0e;
 }
 
@@ -79,7 +79,7 @@ body::before {
 }
 
 #title {
-    color: var(--cyff-color);
+    color: var(--my-color);
     font-size: 2.45rem;
     font-family: 'Lexend', sans-serif;
 
@@ -111,7 +111,7 @@ body::before {
 }
 
 .socials a:hover svg {
-    fill: var(--cyff-color);
+    fill: var(--my-color);
 }
 
 /* Project showcase */
@@ -194,7 +194,7 @@ body::before {
 
 .project-listing:hover {
     background-color: #e4e4e4;
-    border-color: var(--cyff-color);
+    border-color: var(--my-color);
     border-width: 2px;
 }
 
@@ -238,7 +238,7 @@ body::before {
 }
 
 .project-listing:hover h3 {
-    color: var(--cyff-color);
+    color: var(--my-color);
     background-color: rgba(255, 255, 255, 0.11);
 }
 
@@ -260,7 +260,7 @@ body::before {
 }
 
 .project-listing:hover h3 svg {
-    fill: var(--cyff-color);
+    fill: var(--my-color);
     opacity: 1;
 }
 
