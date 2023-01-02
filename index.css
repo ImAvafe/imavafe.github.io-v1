@@ -58,13 +58,35 @@ body::before {
 
 #avatar {
     position: relative;
-    width: 100%;
-    height: 10.5rem;
+    height: 170px;
+    width: 170px;
 
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 7%;
-    -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(255,255,255,0.05) 93%);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(24, 24, 24);
+    border-width: 5px;
+    background-color: var(--page-bg);
+}
+
+#avatar-img {
+    /* -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(255,255,255,0.05) 93%); */
+
+    height: 100%;
+    width: 100%;
+}
+
+#avatar-status {
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+
+    z-index: 1000;
+
+    /* background-color: rgb(74, 255, 89); */
+    border-radius: 50%;
 }
 
 /* Personal introduction */
