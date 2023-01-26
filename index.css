@@ -1,5 +1,5 @@
 :root {
-    --my-color: #d375ff;
+    --my-color: #66bfff;
     --page-bg: #0e0e0e;
 }
 
@@ -19,7 +19,7 @@ body::before {
     left: 0;
     right: 0;
 
-    background: url(/Assets/tongue_face.svg) space 0 0;
+    background: url(/Assets/Icons/Tongue.svg) space 0 0;
     background-size: 100px;
     opacity: 0.009;
 
@@ -89,6 +89,20 @@ body::before {
     border-radius: 50%;
 }
 
+/* Personal PFP */
+
+#pfp {
+    position: relative;
+    height: 200px;
+    width: auto;
+
+    /* border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    border-radius: 50%;
+
+    /* overflow: hidden; */
+}
+
 /* Personal introduction */
 
 .intro {
@@ -114,7 +128,7 @@ body::before {
     grid-auto-flow: column;
     justify-items: center;
     justify-content: center;
-    column-gap: 13px;
+    column-gap: 11px;
 }
 
 .socials a {
@@ -161,7 +175,7 @@ body::before {
 
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3rem;
+    font-size: 22px;
     text-align: center;
 
     background-color: transparent;

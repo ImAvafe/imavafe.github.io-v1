@@ -13,4 +13,4 @@ function setRobloxAvatarThumb() {
     });
 }
 
-setRobloxAvatarThumb()
+// setRobloxAvatarThumb()
