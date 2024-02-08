@@ -34,7 +34,7 @@ body::before {
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
-    padding-top: 60px;
+    padding-top: 100px;
 
     display: flex;
     flex-direction: column;
