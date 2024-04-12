@@ -1,5 +1,5 @@
 :root {
-    --my-color: #66bfff;
+    --my-color: #9f84ff;
     --page-bg: #0e0e0e;
 }
 
@@ -8,7 +8,8 @@ body {
     margin: 0;
 
     background-color: var(--page-bg);
-    font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+    font-family: "Poppins", 'Source Sans Pro', sans-serif;
+    font-weight: 500;
     color: white;
 }
 
@@ -19,9 +20,10 @@ body::before {
     left: 0;
     right: 0;
 
-    background: url(/Assets/Icons/Tongue.svg) space 0 0;
-    background-size: 100px;
-    opacity: 0.009;
+    background: url(/Assets/Background.png) space 0 0;
+    background-repeat: repeat;
+    background-size: 2500px;
+    opacity: 0.01;
 
     content: '';
 }
@@ -96,11 +98,7 @@ body::before {
     height: 200px;
     width: auto;
 
-    /* border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%; */
     border-radius: 50%;
-
-    /* overflow: hidden; */
 }
 
 /* Personal introduction */
@@ -111,13 +109,16 @@ body::before {
     padding-top: 7px;
 
     text-align: center;
-    font-size: 1.03rem;
+    font-size: 1.15rem;
+}
+
+.intro p {
+    margin-top: 0px;
 }
 
 #title {
     color: var(--my-color);
-    font-size: 2.45rem;
-    font-family: 'Lexend', sans-serif;
+    font-size: 3.2rem;
 
     margin: 0;
 }
@@ -132,8 +133,8 @@ body::before {
 }
 
 .socials a {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     padding: 10%;
 }
 
@@ -174,9 +175,9 @@ body::before {
     margin: auto;
 
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
-    text-align: center;
+    font-size: 1.35em;
+    font-family: "Poppins", 'Source Sans Pro', sans-serif;
+    font-weight: 500;
 
     background-color: transparent;
     border: transparent;
@@ -218,14 +219,13 @@ body::before {
 
     box-shadow: 0 0 9px rgba(0, 0, 0, 0.9);
     box-sizing: border-box;
-
-    border-color: #c9c9c9;
-    border-width: 1px;
-    border-radius: 7px;
     border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff50;
+    border-radius: 12px;
 
-    transition: border-color .25s ease;
-    transition: background-color .2s ease;
+    transition: border-color 5s ease;
+    transition: background-color .25s ease;
 }
 
 .project-listing:hover {
@@ -240,15 +240,13 @@ body::before {
 
     background-size: cover;
     background-position: center;
-    background-color: #ebebeb;
     background-blend-mode: multiply;
 
     transition: all .5s ease;
 }
 
 .project-listing:hover .thumbnail {
-    transform: scale(1.06);
-    background-color: white;
+    transform: scale(1.05);
 }
 
 .project-listing h3 {
@@ -261,21 +259,20 @@ body::before {
     height: 47px;
     padding: 9px;
     padding-left: 16px;
+    padding-right: 16px;
 
     color: white;
-    font-family: 'Poppins', 'Source Sans Pro', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px #0f0f0f;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 3px #00000050;
+    font-weight: 500;
     
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
 
     transition: all 0.25s ease;
 }
 
 .project-listing:hover h3 {
-    color: var(--my-color);
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-listing h3 svg {
@@ -290,14 +287,8 @@ body::before {
     padding-right: 4px;
 
     fill: white;
-    opacity: 0.6;
 
     transition: all 0.25s ease;
-}
-
-.project-listing:hover h3 svg {
-    fill: var(--my-color);
-    opacity: 1;
 }
 
 /* ❄ Christmas themed stuff */
