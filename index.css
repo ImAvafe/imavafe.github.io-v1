@@ -23,7 +23,7 @@ body::before {
     background: url(/Assets/Background.png) space 0 0;
     background-repeat: repeat;
     background-size: 2500px;
-    opacity: 0.01;
+    opacity: 0.02;
 
     content: '';
 }
